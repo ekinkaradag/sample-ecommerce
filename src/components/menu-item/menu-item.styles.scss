@@ -43,9 +43,9 @@
 
   .content {
     height: 100px;
+    flex-direction: row;
     padding: 0 25px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     align-items: center;
     justify-content: center;
     border: 1px solid black;
@@ -57,13 +57,13 @@
     .title {
       font-weight: bold;
       margin: 0 6px 0;
-      font-size: 22px;
+      font-size: 10%;
       color: #4a4a4a;
     }
 
     .subtitle {
       font-weight: lighter;
-      font-size: 16px;
+      font-size: 7%;
     }
   }
 }
