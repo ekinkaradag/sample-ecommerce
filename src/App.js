@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 
@@ -13,10 +13,12 @@ function App() {
       <SourceCodeInfo
         href={"https://github.com/ekinkaradag/sample-ecommerce"}
       />
-      <Switch>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/shop" component={ShopPage} />
-      </Switch>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Switch basename="/">
+          <Route exact path="/" component={HomePage} />
+          <Route path="/shop" component={ShopPage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
