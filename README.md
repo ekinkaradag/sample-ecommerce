@@ -20,6 +20,11 @@ You will also see any lint errors in the console.
 
 # Changelog
 
+## 16 November 2020
+
+- Fixed routing
+- Added a header as a navigation bar
+
 ## 15 November 2020
 
 - Added routing for future developments.
