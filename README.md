@@ -20,6 +20,15 @@ You will also see any lint errors in the console.
 
 # Changelog
 
+## 18 November 2020
+
+- Added a custom input class for the forms ([FormInput](src/components/form-input/))
+- Added a custom button component which can be used on any part of the site ([CustomButton](src/components/custom-button/))
+- Added a page component for both signing in and signing up ([SignInAndSignUpPage](src/pages/sign-in-and-sign-up))
+- Added a "Sign In" component ([Sign In](src/components/sign-in))
+    - Now the sign in component is visible at "/signin" <code>href</code>
+    
+
 ## 16 November 2020
 
 - Fixed routing
