@@ -2,6 +2,8 @@
 
 This is an e-commerce website I built with [React](https://reactjs.org/). The sole purpose of this project is to demonstrate my skills on my portfolio.
 
+You can view the current state of the website by visiting [ekinkaradag.github.io/sample-commerce](https://ekinkaradag.github.io/sample-ecommerce)
+
 ## To run it on your machine locally
 
 Navigate to the project folder and run these commands on your machine in order:
