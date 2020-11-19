@@ -22,6 +22,10 @@ You will also see any lint errors in the console.
 
 # Changelog
 
+## 20 November 2020
+
+- A "Hide" button is implemented inside the Disclaimer ([Disclaimer](src/components/disclaimer/)).
+
 ## 19 November 2020
 
 - Added a disclaimer bar on the top of the page ([Disclaimer](src/components/disclaimer/)).
