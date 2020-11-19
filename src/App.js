@@ -18,7 +18,6 @@ function App() {
         <Route path="/shop" component={ShopPage} />
         <Route path="/signin" component={SignInAndSignUpPage} />
       </HashRouter>
-      <SourceCodeInfo />
     </div>
   );
 }

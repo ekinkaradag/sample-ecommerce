@@ -1,0 +1,26 @@
+.disclaimer-bar{
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fcf488;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    word-wrap: break-word;
+    align-items: center;
+
+    a {
+        text-decoration: underline;
+    }
+    
+    .group{
+        width: 97%;
+        float: left;
+    }
+    
+    .close-button{
+        width: 3%;
+        text-align: right;
+    }
+}
+
