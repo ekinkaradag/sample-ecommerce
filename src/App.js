@@ -11,7 +11,7 @@ import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up
 
 function App() {
   return (
-    <div>
+    <div className='app'>
       <Header />
       <HashRouter basename="/">
         <Route exact path="/" component={HomePage} />
