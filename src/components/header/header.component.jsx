@@ -4,7 +4,7 @@ import { ReactComponent as MainLogo } from '../../assets/favicon.svg'
 
 import './header.styles.scss';
 
-const Header = () => (
+const Header = ({currentUser}) => (
     <div className='header'>
         <HashRouter basename="/">
             <Link to="/">
@@ -18,7 +18,12 @@ const Header = () => (
                     CONTACT
                 </Link>
                 <Link className='option' to='/signin'>
-                    SIGN IN
+                    {
+                        (currentUser!==null) ?
+                            <div>ACCOUNT</div>
+                        :
+                            <div>SIGN IN</div>
+                    }
                 </Link>
             </div>
         </HashRouter>

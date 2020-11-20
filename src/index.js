@@ -6,11 +6,9 @@ import App from "./App";
 import Disclaimer from "./components/disclaimer/disclaimer.component";
 
 ReactDOM.render(
-  <React.StrictMode>
     <BrowserRouter>
       <App />
-    </BrowserRouter>
-  </React.StrictMode>,
+    </BrowserRouter>,
   document.getElementById("root")
 );
 
