@@ -9,7 +9,14 @@ const SignInAndSignUpPage = ({currentUser}) => (
     <div className='sign-in-and-sign-up'>
         {
             (currentUser!==null) ?
-            <div>
+            <div className='signed-in-user'>
+                {
+                    (currentUser.photoURL!==null) ?
+                    <img src={currentUser.photoURL} />
+                    :
+                    <div></div>
+                }
+                <p>Hello {currentUser.displayName}</p>
                 <p>You are logged in with "{currentUser.email}"</p>
                 <CustomButton onClick={() => auth.signOut()}>SIGN OUT</CustomButton>
             </div>
