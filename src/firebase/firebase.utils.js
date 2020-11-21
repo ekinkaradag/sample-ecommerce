@@ -18,14 +18,22 @@ firebase.initializeApp(config);
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
 
-//Sign in with Google
+/**
+ * Sign in with Google
+ */
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 googleProvider.setCustomParameters({ prompt: 'select_account' });
-export const signInWithGoogle = () => auth.signInWithPopup(googleProvider);
+export const signInWithGoogle = () => auth.signInWithPopup(googleProvider).catch(function(error) {
+    alert(error.message + ': ' + error.email)
+  });;
 
-//Sign in with Facebook
+/**
+ * Sign in with Facebook
+ */
 const facebookProvider = new firebase.auth.FacebookAuthProvider();
 facebookProvider.setCustomParameters({ prompt: 'select_account' });
-export const signInWithFacebook = () => auth.signInWithPopup(facebookProvider);
+export const signInWithFacebook = () => auth.signInWithPopup(facebookProvider).catch(function(error) {
+    alert(error.message + ': ' + error.email)
+  });
 
 export default firebase;
