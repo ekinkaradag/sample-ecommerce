@@ -2,6 +2,10 @@
     width: 380px;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 20px;
+
 
     .title {
         margin: 10px 0;

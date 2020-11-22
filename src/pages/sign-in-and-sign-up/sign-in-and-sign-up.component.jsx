@@ -11,7 +11,7 @@ const SignInAndSignUpPage = ({currentUser}) => (
             (currentUser!==null) ?
             <div className='signed-in-user'>
                 {
-                    (currentUser.photoURL!==null) ?
+                    (currentUser.photoURL!==null && currentUser.photoURL.includes('google')) ?
                     <img src={currentUser.photoURL} />
                     :
                     <div></div>
