@@ -4,8 +4,10 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+  align-items: center;
 
   .logo-container {
+    margin: 15px;
     height: 100%;
     width: 70px;
   }
@@ -18,6 +20,7 @@
     justify-content: flex-end;
 
     .option {
+      margin: 15px;
       padding: 10px 15px;
       cursor: pointer;
     }
