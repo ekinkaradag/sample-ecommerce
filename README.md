@@ -22,6 +22,16 @@ You will also see any lint errors in the console.
 
 # Changelog
 
+## 22 November 2020
+
+- Because Facebook requires a legitimate permission from the developer, I have disabled displaying profile photos for Facebook users.
+
+## 21 November 2020
+
+- "Sign In with Google" & "Sign In with Facebook" buttons have been implemented
+    - In order to maintain stability in Firebase, a user with the same registered email address, can only sign in with a single preffered method. Now a proper alert message is displayed, if the user attempts to sign in with a different method which has the same registered email address.
+- Google user's profile photo is displayed.
+
 ## 20 November 2020
 
 - A "Hide" button is implemented inside the Disclaimer ([Disclaimer](src/components/disclaimer/)).
