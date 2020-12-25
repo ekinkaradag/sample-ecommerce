@@ -24,7 +24,7 @@ You will also see any lint errors in the console.
 
 ## 25 December 2020
 
-- Added a SignUp component for users to sign up and sign in with their email and password combinations.
+- Added a [SignUp component](src/components/sign-up/) for users to sign up and sign in with their email and password combinations.
 
 ## 22 November 2020
 
