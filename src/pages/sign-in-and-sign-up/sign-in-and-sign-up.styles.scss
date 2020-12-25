@@ -1,3 +1,19 @@
-.signed-in-user {
-    text-align: center;
+.sign-in-and-sign-up {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+
+}
+
+.sign-in {
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.sign-up {
+    float: right;
+    margin-left: 10px;
+    margin-right: 10px;
 }
