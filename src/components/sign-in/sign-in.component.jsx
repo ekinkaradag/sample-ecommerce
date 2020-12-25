@@ -1,7 +1,7 @@
 import React from 'react';
 import FormInput from '../form-input/form-input.component'
 import CustomButton from '../custom-button/custom-button.component'
-import {signInWithFacebook, signInWithGoogle} from '../../firebase/firebase.utils'
+import {auth, signInWithFacebook, signInWithGoogle} from '../../firebase/firebase.utils'
 
 import './sign-in.styles.scss';
 
@@ -15,10 +15,16 @@ class SignIn extends React.Component{
         }
     }
 
-    handleSubmit = event => {
+    handleSubmit = async event => {
         event.preventDefault();
 
-        this.setState( {email: '', password: ''});
+        const { email, password } = this.state;
+        try {
+            await auth.signInWithEmailAndPassword(email, password);
+            this.setState({ email: '', password: '' });
+        } catch (error) {
+            alert(error.message);
+        }
     }
 
     handleChange = event => {
@@ -51,8 +57,8 @@ class SignIn extends React.Component{
                     
                     <div className='buttons'>
                         <CustomButton type='submit'>SIGN IN</CustomButton>
-                        <CustomButton onClick={signInWithGoogle} signInMethod='google-sign-in'>SIGN IN WITH GOOGLE</CustomButton>
-                        <CustomButton onClick={signInWithFacebook} signInMethod='facebook-sign-in'>SIGN IN WITH FACEBOOK</CustomButton>
+                        <CustomButton type='button' onClick={signInWithGoogle} signInMethod='google-sign-in'>SIGN IN WITH GOOGLE</CustomButton>
+                        <CustomButton type='button' onClick={signInWithFacebook} signInMethod='facebook-sign-in'>SIGN IN WITH FACEBOOK</CustomButton>
                     </div>
                     
                 </form>
