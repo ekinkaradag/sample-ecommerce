@@ -22,6 +22,10 @@ You will also see any lint errors in the console.
 
 # Changelog
 
+## 25 December 2020
+
+- Added a SignUp component for users to sign up and sign in with their email and password combinations.
+
 ## 22 November 2020
 
 - Because Facebook requires a legitimate permission from the developer, I have disabled displaying profile photos for Facebook users.
